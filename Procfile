@@ -1,1 +1,1 @@
-web: node Experimental-server-1.js
+worker: node Experimental-server-1.js
