@@ -4,7 +4,8 @@ var express = require('express'),
  * s flsldjflsd
  */
 var hostname = 'localhost';
-var port = 4000;
+var port = process.env.PORT || 8080;
+
 
 var app = express();
 
