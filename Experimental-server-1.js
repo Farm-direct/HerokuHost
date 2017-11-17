@@ -9,9 +9,9 @@ var port = process.env.PORT || 8080;
 
 var app = express();
 
-// app.get('/dishes', function(req, res, next) {
-//     res.end('Will send all the dishes to you!');
-// });
+app.get('/dishes', function(req, res, next) {
+    res.end('Will send all the dishes to you!');
+});
 app.use(function(req, res, next) {
     console.log(req.headers);
     res.writeHead(200, { 'Content-Type': 'text/html' });
